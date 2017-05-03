@@ -8,7 +8,8 @@ It gives you full control of your analytics, exposing the google's `ga()` functi
 What it means is, that it will set the page field on every route change for You, but you will 
 have to send the pageviews, events etc. manually. But on the other hand, you have the full control of that process.
 
-[![Build Status](https://travis-ci.org/panrafal/angular-ga.png?branch=master)](https://travis-ci.org/panrafal/angular-ga)
+[![Run Status](https://api.shippable.com/projects/590984af86175d07006104c3/badge?branch=master)](https://app.shippable.com/github/afshinrudgar/angular-ga)
+
 
 Usage
 =====
@@ -90,8 +91,4 @@ If `ga` attribute is empty, the event is guesses from the context as follows:
 
 You can use attributes `ga-category`, `ga-action`, `ga-label` and `ga-value` to override
 default behaviour.
-
-
-
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/1b31cde4eb48524cf5194d3c2bf1ef68 "githalytics.com")](http://githalytics.com/panrafal/angular-ga)
 
