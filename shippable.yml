@@ -1,0 +1,38 @@
+language: node_js
+
+node_js:
+  - 6.9.5
+
+build:
+  pre_ci_boot:
+    image_name: drydock/u14nod
+    image_tag: prod
+    pull: true
+
+  ci:
+    - sudo apt-get install -y git
+    - npm install -g karma karma-cli jasmine
+    - npm install npm@3.10.10 -g
+    - node -v
+    - npm -v
+    - npm install
+
+    - npm run test
+
+  post_ci:
+#    - ./script/xvfb stop
+
+  # on_success:
+  # on_failure:
+
+integrations:
+  notifications:
+    - integrationName: email
+      type: email
+      recipients:
+        - afshinrodgar@eskano.com
+      branches:
+        only:
+          - master
+      on_success: change
+      on_failure: always
