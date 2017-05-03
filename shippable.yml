@@ -30,7 +30,7 @@ integrations:
     - integrationName: email
       type: email
       recipients:
-        - afshinrodgar@eskano.com
+        - afshinrodgar@gmail.com
       branches:
         only:
           - master
